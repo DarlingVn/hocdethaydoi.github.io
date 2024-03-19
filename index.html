@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đại Học Đại Nam</title>
+    <link rel="icon" href="./Pic/Logo.png" type="image/png">
+    <link rel="stylesheet" href="interface.css">
+    <style>
+    *{box-sizing: border-box;}  
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        }
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+        .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+        .active {
+        background-color: #717171;
+        }
+        .slide {
+        animation-name: slide;
+        animation-duration: 3s;
+        }
+    @keyframes slide {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+    <div class="navbar">
+        <a href="index.html">Trang Chủ</a>
+        <div class="dropdown">
+            <button class="dropbutton">Giới Thiệu</button>
+            <div class="dropdown-content">
+                <a href="lspt.html">Lịch Sử Phát Triển</a>
+                <a href="csvc1.html">Cơ Sở Vật Chất</a>
+                <a href="dngv.html">Đội Ngũ Giảng Viên</a>
+            </div>
+        </div>
+        <a href="#">Chương Trình Đào Tạo</a>
+        <div class="dropdown">
+            <button class="dropbutton">Tuyển Sinh Đại Học</button>
+            <div class="dropdown-content">
+                <a href="Tuyensinh.html">Thông Tin Tuyển Sinh 2024</a>
+                <a href="dkts.html">Đăng Ký Tuyển Sinh</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbutton">Liên Hệ</button>
+            <div class="dropdown-content">
+                <a href="#">Email</a>
+                <a href="#">Số Điện Thoại</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbutton">Tài Khoản</button>
+            <div class="dropdown-content">
+                <a href="login.html">Đăng Nhập</a>
+                <a href="#">Đăng Kí</a>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="submit">Tìm kiếm</button>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="image-overlay">
+            <div class="overlay-content"></div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides slide"><img src="./Pic/bn.jpg" style="width: 100%;"></div>
+        <div class="mySlides slide"><img src="./Pic/bn1.jpg" style="width: 100%;"></div>
+        <div class="mySlides slide"><img src="./Pic/bn2.jpg" style="width: 100%;"></div>
+        <div class="mySlides slide"><img src="./Pic/bn3.jpg" style="width: 100%;"></div>
+        <div class="mySlides slide"><img src="./Pic/bn4.jpg" style="width: 100%;"></div>
+    </div>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    
+    </header>
+    <main>
+        <div class="background-container"></div>
+        <section class="section">
+            <h2>TIN TỨC</h2>
+            <div class="news">
+                <article class="new">
+                    <h2>Đại học Đại Nam</h2>
+                    <img src="./Pic/p1.jpg" alt="Hình 1">
+                    <p>Tại sao nên chọn Đại học Đại Nam?</p>
+                    <p><a href="#">Đọc thêm</a></p>
+                </article>
+                
+                <article class="new">
+                    <h2>Bản Tin Đại Nam</h2>
+                    <img src="./Pic/p2.jpg" alt="Hình ảnh bài viết 1">
+                    <p>Đại Nam tuyển sinh các ngành nào?.</p>
+                    <p><a href="#">Đọc thêm</a></p>
+                </article>
+                
+                <article class="new">
+                    <h2>Khoa CNTT</h2>
+                    <img src="./Pic/p6.jpg" alt="Hình ảnh bài viết 1">
+                    <p>Ngành CNTT, ra trường làm gì?</p>
+                    <p><a href="#">Đọc thêm</a></p>
+                </article>
+            </div>
+        </section>
+        <marquee class="marquee" direction=”right” onmouseover="stop()" onmouseout="start()">
+        <a href="" >Tại sao nên chọn Đại học Đại Nam?</a> <span > | </span>
+        <a href="" >Thông báo tuyển dụng bổ sung Cán bộ - Giảng viên năm học 2023-2024</a> <span > | </span>
+        <a href="" >Được gì khi là sinh viên Đại học Đại Nam?</a> <span > | </span>
+        </marquee>
+    </main>
+    <footer class="footer">
+        <div class="column">
+          <h3 style="font-size: 25px; text-align: left;">TRƯỜNG ĐẠI HỌC ĐẠI NAM</h3>
+          <p style="font-size: 16px; text-align: left;">Địa chỉ: Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội<br>Email: dnu@dainam.edu.vn<br>Điện thoại: (024) 35577799<br>&copy;Hà Tuấn Điệp</p></p>
+        </div>
+        <div class="column">
+          <p><img src="./Pic/footer.png" alt="Logo Footer"></p>
+        </div>
+        <div class="column">
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.1206073986514!2d105.75520821001443!3d20.947671180600853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452eaa9c461c3%3A0x2a3e1c421f299adc!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyDEkOG6oWkgTmFt!5e0!3m2!1svi!2s!4v1709141872942!5m2!1svi!2s" width="250" height="125" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đại Học Đại Nam</title>
+    <link rel="icon" href="./Pic/Logo.png" type="image/png">
+    <link rel="stylesheet" href="dkts.css">
+    <style>
+        marquee{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <div class="navbar">
+        <a href="index.html">Trang Chủ</a>
+        <div class="dropdown">
+            <button class="dropbutton">Giới Thiệu</button>
+            <div class="dropdown-content">
+                <a href="lspt.html">Lịch Sử Phát Triển</a>
+                <a href="csvc1.html">Cơ Sở Vật Chất</a>
+                <a href="dngv.html">Đội Ngũ Giảng Viên</a>
+            </div>
+        </div>
+        <a href="#">Chương Trình Đào Tạo</a>
+        <div class="dropdown">
+            <button class="dropbutton">Tuyển Sinh Đại Học</button>
+            <div class="dropdown-content">
+                <a href="Tuyensinh.html">Thông Tin Tuyển Sinh 2024</a>
+                <a href="dkts.html">Đăng Ký Tuyển Sinh</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbutton">Liên Hệ</button>
+            <div class="dropdown-content">
+                <a href="#">Email</a>
+                <a href="#">Số Điện Thoại</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbutton">Tài Khoản</button>
+            <div class="dropdown-content">
+                <a href="login.html">Đăng Nhập</a>
+                <a href="#">Đăng Kí</a>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="submit">Tìm kiếm</button>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="image-overlay">
+            <div class="overlay-content"></div>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="login">
+            <form class="login-form">
+                <h1>Đăng Ký</h1>
+                <label for="fullname">Họ & Tên</label>
+                <input type="text" id="fullname" class="input-account">
+                <label for="dob">Ngày Sinh</label>
+                <input type="date" id="dob" class="input-account">
+                <label for="phone">Số Điện Thoại</label>
+                <input type="tel" id="phone" class="input-account">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-account">
+                <label for="address">Địa Chỉ</label>
+                <input type="text" id="address" class="input-account">
+                <label for="major1">Ngành Nguyện Vọng 1</label>
+                <select id="major1" class="input-account">
+                    <option value="" disabled selected>Chọn Ngành</option>
+                    <option value="nganh1">Ngành 1</option>
+                    <option value="nganh2">Ngành 2</option>
+                    <option value="nganh3">Ngành 3</option>
+                </select>
+                <label for="major2">Ngành Nguyện Vọng 2</label>
+                <select id="major2" class="input-account">
+                    <option value="" disabled selected>Chọn Ngành</option>
+                    <option value="nganh1">Ngành 1</option>
+                    <option value="nganh2">Ngành 2</option>
+                    <option value="nganh3">Ngành 3</option>
+                </select>
+                <button id="registerButton" class="button-login">Đăng Ký</button>
+            </form>
+        </div>
+        </section>
+        <marquee class="marquee" direction=”right” onmouseover="stop()" onmouseout="start()">
+        <a href="" >Tại sao nên chọn Đại học Đại Nam?</a> <span > | </span>
+        <a href="" >Thông báo tuyển dụng bổ sung Cán bộ - Giảng viên năm học 2023-2024</a> <span > | </span>
+        <a href="" >Được gì khi là sinh viên Đại học Đại Nam?</a> <span > | </span>
+        </marquee>
+    </main>
+    <footer class="footer">
+        <div class="column">
+          <h3 style="font-size: 25px; text-align: left;">TRƯỜNG ĐẠI HỌC ĐẠI NAM</h3>
+          <p style="font-size: 16px; text-align: left;">Địa chỉ: Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội<br>Email: dnu@dainam.edu.vn<br>Điện thoại: (024) 35577799<br>&copy;Hà Tuấn Điệp</p></p>
+        </div>
+        <div class="column">
+          <p><img src="./Pic/footer.png" alt="Logo Footer"></p>
+        </div>
+        <div class="column">
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.1206073986514!2d105.75520821001443!3d20.947671180600853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452eaa9c461c3%3A0x2a3e1c421f299adc!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyDEkOG6oWkgTmFt!5e0!3m2!1svi!2s!4v1709141872942!5m2!1svi!2s" width="250" height="125" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.getElementById("registerButton").addEventListener("click", function(event) {
+        event.preventDefault();
+        var fullname = document.getElementById("fullname").value;
+        var dob = document.getElementById("dob").value;
+        var phone = document.getElementById("phone").value;
+        var email = document.getElementById("email").value;
+        var address = document.getElementById("address").value;
+        var major1 = document.getElementById("major1").value;
+        var major2 = document.getElementById("major2").value;
+        if (fullname && dob && phone && email && address && major1 && major2) {
+            alert("Đăng ký thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.");
+        } else 
+        {
+            alert("Vui lòng điền đầy đủ thông tin để đăng ký.");
+        }
+    });
+</script>
+</html>
